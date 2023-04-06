@@ -1,8 +1,6 @@
 # Chat-App
 
-DevChat is a Chat App made for dev community.
-This chat app has mulitple users chatting at same time feature and in different rooms too.
-Enter name, Select room and chat with community.
+DevChat is a Chat App made for the dev community. This chat app has multiple users chatting at the same time feature and in different rooms too. Enter your name, Select a room, and chat with the community.
 
 It uses socket.io. For more - https://socket.io/docs/v4/
 
