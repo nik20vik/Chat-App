@@ -6,6 +6,11 @@ Enter name, Select room and chat with community.
 
 It uses socket.io. For more - https://socket.io/docs/v4/
 
+## How to use :
+
+1. Go to the link: https://dev-chat-qz7e.onrender.com
+2. Start using the app.
+
 ## Example:
 
 ### Home Page
