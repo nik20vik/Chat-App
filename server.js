@@ -18,7 +18,7 @@ const io = socketio(server);
 // Set static folder
 app.use(express.static(path.join(__dirname, "_html_css")));
 
-const botName = "ChatCord Bot";
+const botName = "DevChat Bot";
 
 // Run when client connects
 io.on("connection", (socket) => {
@@ -27,7 +27,7 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // Welcome current user
-    socket.emit("message", formatMessages(botName, "Welcome to ChatCord!"));
+    socket.emit("message", formatMessages(botName, "Welcome to DevChat!"));
 
     // Broadcast to other users when a user connects except the user itself
     socket.broadcast
@@ -66,7 +66,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => {
   console.log(`Server listening at port ${PORT}`);
